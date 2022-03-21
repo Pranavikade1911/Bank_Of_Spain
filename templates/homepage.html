@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+
+	<section class="home">
+		<label class="heading">Welcome to Bank Of Spain</label>
+
+    <div class="features">
+        <div>
+            <figure>
+                <img src="https://cfo.university/uploads/article-images/customer.jpg" alt="">
+            </figure>
+            <a href="{% url 'customers' %}" class="btn">
+                View all customers
+            </a>
+        </div>
+
+        <div>
+            <figure>
+                <img src="https://cdn.bossrevolution.com/cms-content/blog/bank-to-bank-money-transfer.jpg" alt="">
+            </figure>
+            <a href="{% url 'customers' %}" class="btn">
+                Transfer Money
+            </a>
+        </div>
+
+        <div>
+            <figure>
+                <img src="https://thumbs.dreamstime.com/b/transaction-history-icon-transaction-history-icon-simple-vector-illustration-215661773.jpg" alt="">
+            </figure>
+            <a href="{% url 'transactions' %}" class="btn">
+                View Transfer Money History
+            </a>
+        </div>
+	</div>
+	</section>
+
+    {% endblock %}
